@@ -7,7 +7,7 @@ const msg2 = document.querySelector('#msg-2')
       e.preventDefault()
         const location = search.value
         
-    fetch("/weather?address='+ location).then((response)=>{
+    fetch('/weather?address='+ location).then((response)=>{
         response.json().then((data)=>{
         
             if(data.error){
