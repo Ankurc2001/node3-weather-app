@@ -66,10 +66,10 @@ app.get('/weather',(req,res)=>{
                 })
             }
             res.send({
-                forecast:'rainy',
                 address: req.query.address,
                 location:location,
-                forecastedata
+                forecaste : forecastedata.forecaste,
+                temperature : forecastedata.temperature
             })
             
         })

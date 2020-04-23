@@ -10,7 +10,7 @@ const forecaste = (laditude,longitude,callback)=>{
            }else{
                callback(undefined,{
                    forecaste: body.current.weather_descriptions[0],
-                   temptarture: body.current.temperature
+                   temperature: body.current.temperature
                  })
             }
        
